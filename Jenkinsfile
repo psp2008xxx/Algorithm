@@ -22,6 +22,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
+                pip list
                 python3 -m pytest -v
                 '''
             }
