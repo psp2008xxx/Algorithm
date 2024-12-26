@@ -22,6 +22,7 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
+                . .venv/bin/activate
                 pip list
                 python3 -m pytest -v
                 '''
